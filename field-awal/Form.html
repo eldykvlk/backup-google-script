@@ -1,0 +1,58 @@
+	<div class="card">
+		<div class="card-header">Data Registrasi</div>
+		<div class="card-body">
+
+			<form id="myForm" onsubmit="handleFormSubmit(this)">
+				<div id="message"></div>
+				<input type="text" id="RecId" name="RecId" value="ID" style="display: none">
+
+				<!-- Input type text -->
+				<div class="form-group">
+					<label for="nama">Nama</label>
+					<input type="text" class="form-control" name="nama" id="nama" required>
+				</div>
+
+				<!-- Input text grid -->
+				<div class="form-group">
+					<div class="row">
+						<div class="col">
+							<label>Alamat</label>
+							<input type="text" name="alamat" id="alamat" class="form-control" required>
+						</div>
+						<div class="col">
+							<label>Telp</label>
+							<input type="number" name="telp" id="telp" class="form-control" required>
+						</div>
+					</div>
+				</div>
+
+				<!-- Input text grid -->
+				<div class="form-group">
+					<div class="row">
+						<div class="col">
+							<label>Gender</label>
+							<select class="form-select" name="gender" id="gender" required>
+								<option selected disabled hidden style='display: none' value=''></option>
+								<option value="Laki-Laki">Laki-Laki</option>
+								<option value="Perempuan">Perempuan</option>
+							</select>
+						</div>
+						<div class="col">
+							<label>Tanggal Pelayanan</label>
+							<input type="text" class="form-control" name="tgl" id="tgl" placeholder="Tanggal" onfocus="(this.type = 'date')" required>
+						</div>
+					</div>
+				</div>
+
+				<!-- Input type textarea -->
+				<div class="form-group">
+					<label for="catat">Catatan</label>
+					<textarea class="form-control" name="catatan" id="catatan" required></textarea>
+				</div>
+
+
+
+			</form>
+
+		</div>
+	</div>
