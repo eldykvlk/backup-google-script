@@ -1,0 +1,109 @@
+	<div class="card">
+		<div class="card-header">Data Registrasi</div>
+		<div class="card-body">
+
+			<form id="myForm" onsubmit="handleFormSubmit(this)">
+				<div id="message"></div>
+				<input type="text" id="RecId" name="RecId" value="ID" style="display: none">
+
+				<!-- Input type text -->
+				<div class="form-group">
+					<label for="nama">Nama Balita</label>
+					<input type="text" class="form-control" name="namaBalita" id="namaBalita" required>
+				</div>
+
+				<!-- Input text grid -->
+				<div class="form-group">
+					<div class="row">
+						<div class="col">
+							<label>Nama Ortu</label>
+							<input type="text" name="namaOrtu" id="namaOrtu" class="form-control" required>
+						</div>
+						<div class="col">
+							<label>Nomor KK</label>
+							<input type="number" name="noKK" id="noKK" class="form-control" required>
+						</div>
+					</div>
+				</div>
+
+				<!-- Input text grid -->
+				<div class="form-group">
+					<div class="row">
+						<div class="col">
+							<label>Nomor NIK</label>
+							<input type="number" name="noNIK" id="noNIK" class="form-control" required>
+						</div>
+						<div class="col">
+							<label>Tanggal Lahir</label>
+							<input type="text" class="form-control" name="tglLahir" id="tglLahir" placeholder="TanggalLahir" onfocus="(this.type = 'date')" required>
+						</div>
+					</div>
+				</div>
+
+				<!-- Input text grid -->
+				<div class="form-group">
+					<div class="row">
+						<div class="col">
+							<label>Alamat</label>
+							<input type="text" name="alamat" id="alamat" class="form-control" required>
+						</div>
+						<div class="col">
+							<label>Nomor Telepon</label>
+							<input type="number" name="telp" id="telp" class="form-control" required>
+						</div>
+					</div>
+				</div>
+
+				<!-- Input text grid -->
+				<div class="form-group">
+					<div class="row">
+						<div class="col">
+							<label>Gender</label>
+							<select class="form-select" name="gender" id="gender" required>
+								<option selected disabled hidden style='display: none' value=''></option>
+								<option value="Laki-Laki">Laki-Laki</option>
+								<option value="Perempuan">Perempuan</option>
+							</select>
+						</div>
+						<div class="col">
+							<label>Tanggal Pelayanan</label>
+							<input type="text" class="form-control" name="tgl" id="tgl" placeholder="Tanggal" onfocus="(this.type = 'date')" required>
+						</div>
+					</div>
+				</div>
+
+				<!-- Input text grid -->
+				<div class="form-group">
+					<div class="row">
+						<div class="col">
+							<label>Umur</label>
+							<input type="text" name="umur" id="umur" class="form-control" required>
+						</div>
+						<div class="col">
+							<label>Berat badan(kg)</label>
+							<input type="number" name="beratBdn" id="beratBdn" class="form-control" required>
+						</div>
+					</div>
+				</div>
+
+				<!-- Input text grid -->
+				<div class="form-group">
+					<div class="row">
+						<div class="col">
+							<label>Tinggi badan(cm)</label>
+							<input type="text" name="tinggiBdn" id="tinggiBdn" class="form-control" required>
+						</div>
+						<div class="col">
+					<label for="catat">Catatan</label>
+					<textarea class="form-control" name="catatan" id="catatan" class="form-control" required></textarea>
+						</div>
+					</div>
+				</div>
+
+
+
+
+			</form>
+
+		</div>
+	</div>
